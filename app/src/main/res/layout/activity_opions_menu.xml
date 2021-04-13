@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpionsMenu">
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/back_option" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/user"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/profile_picture"/>
+
+    <TextView
+        android:id="@+id/tap_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to change your profile picture"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/profile_picture"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/made_tommy_light"
+        android:textStyle="italic"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tap_option"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/first_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBlue"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/first_name_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"
+
+            app:layout_constraintTop_toTopOf="@id/first_name_text"
+            android:textColor="@color/lightGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/first_name_display"/>
+
+
+        <TextView
+            android:id="@+id/last_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBlue"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/last_name_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="@id/last_name_text"
+            android:textColor="@color/lightGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/last_name_display"/>
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/view3"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBlue"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/gender_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="@id/gender_text"
+            android:textColor="@color/lightGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/gender_display"/>
+
+        <TextView
+            android:id="@+id/contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_contact"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/view4"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBlue"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/contact_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/made_tommy_regular"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="@id/contact_text"
+            android:textColor="@color/lightGrey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/last_name_display"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_layout"
+        android:layout_marginTop="25dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@color/colorBlue"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:fontFamily="@font/made_tommy_light"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logout_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+                <ImageView
+                    android:id="@+id/logout_option"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logout_icon"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:fontFamily="@font/made_tommy_light"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/progressBar_cardview"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="2dp"
+        android:visibility="invisible"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
